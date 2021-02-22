@@ -1,0 +1,14 @@
+crl
+state
+fmly_typ
+part_edu
+fmly_mem
+fmly_inc
+preg_num
+anc_cur_wt
+hght
+bmi
+abgircm
+derived_parity
+derived_age_approx_age
+derived_state

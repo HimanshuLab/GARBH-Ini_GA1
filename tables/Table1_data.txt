@@ -1,0 +1,68 @@
+#Age
+	23	(21,26)
+#GA estational at enrolment by LMP 
+	11.308±2.67
+#GA at enrolment by USG-Hadlock 
+	10.873±2.28
+#BMI 
+	Normal	59.931%
+	Obese	9.088%
+	Overweight	1.658%
+	Underweight	27.208%
+#Haemoglobin  
+	8.8	(8.2,9.2)
+#Height   
+	153	(149.2,156.8)
+#Socioeconomic Status 
+	0	0.657%
+	1	15.404%
+	2	33.981%
+	3	48.957%
+	4	0.429%
+	Undetermined	0.572%
+# Parity
+	0	49.528%
+	1	33.552%
+	2	12.604%
+	3	3.344%
+	4	0.743%
+	5	0.143%
+	6	0.029%
+# Education
+	Graduate 	12.232%
+	High school 	18.605%
+	Illiterate	21.578%
+	Literate or primary school  	8.631%
+	Middle school 	15.09%
+	Post high school diploma 	20.892%
+	Post-graduate 	2.944%
+# Occupation
+	Clerk, shop, farm owner 	0.171%
+	Professional 	0.343%
+	Semi-professional 	0.257%
+	Semi-skilled worker 	0.972%
+	Skilled worker 	1.4%
+	Unemployed	93.484%
+	Unskilled worker 	3.344%
+# Religion
+	Christian	0.743%
+	Hindu	92.141%
+	More than one	0.086%
+	Muslim	6.602%
+	Sikh	0.4%
+#Secondhand tobacco smoke
+	Exposed	19.234%
+	Undertermined	0.2%
+	Unexposed	80.566%
+# safe_fuel
+	TRUE = 92.14
+	FALSE = 7.86
+# safe_water
+	TRUE = 49.8
+	FALSE = 50.2
+# chro_ill
+	TRUE = 0.97
+	FALSE = 99.03
+# past_htp
+	TRUE = 0.43
+	FALSE = 99.57

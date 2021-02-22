@@ -1,0 +1,10 @@
+Bland-Altman Statistics
+USG-LMP  	-0.435±2.02 
+Limits of Agreement -4.385778 3.515937 
+Precentage outside: 8.821233 
+USG-LMP dataset1 	-0.349±1.89 
+Limits of Agreement dataset1 -4.058801 3.360549 
+Precentage outside dataset1: 8.705882 
+USG-LMP dataset1 	-0.341±1.22 
+Limits of Agreement dataset1 -4.130641 3.218505 
+Precentage outside  dataset1: 8.387622 

@@ -1,0 +1,36 @@
+formula	var_count	R2	RMSE	AdjR2
+ga ~ crl+ derived_age_approx_age	2	0.867	0.0833624621224976	0.8669
+ga ~ crl+ derived_age_approx_age+ sqrt(part_edu)	3	0.867	0.0833837072776439	0.8668
+ga ~ crl	1	0.866	0.0836617974405674	0.8659
+ga ~ crl+ anc_cur_wt	2	0.866	0.0836847159759006	0.8659
+ga ~ crl+ sqrt(anc_cur_wt)	2	0.866	0.0836848535209993	0.8659
+ga ~ crl+ sqrt(part_edu)	2	0.866	0.0836714239472169	0.8659
+ga ~ crl+ anc_cur_wt+ derived_age_approx_age	3	0.866	0.0834337623143837	0.8658
+ga ~ crl+ sqrt(anc_cur_wt)+ derived_age_approx_age	3	0.866	0.0834263987546505	0.8658
+ga ~ crl+ derived_age_approx_age+ part_edu	3	0.866	0.0834325366785876	0.8658
+ga ~ crl+ anc_cur_wt+ derived_age_approx_age+ part_edu	4	0.866	0.0835024183805114	0.8658
+ga ~ crl+ sqrt(anc_cur_wt)+ derived_age_approx_age+ part_edu	4	0.866	0.0834955526934566	0.8658
+ga ~ crl+ anc_cur_wt+ sqrt(part_edu)	3	0.866	0.0836869950274616	0.8658
+ga ~ crl+ sqrt(anc_cur_wt)+ sqrt(part_edu)	3	0.866	0.0836869355732443	0.8658
+ga ~ crl+ anc_cur_wt+ derived_age_approx_age+ sqrt(part_edu)	4	0.866	0.0834522124232548	0.8658
+ga ~ crl+ sqrt(anc_cur_wt)+ derived_age_approx_age+ sqrt(part_edu)	4	0.866	0.0834448805298262	0.8658
+ga ~ crl+ part_edu	2	0.865	0.0837331259371352	0.8649
+ga ~ crl+ anc_cur_wt+ part_edu	3	0.865	0.0837516214184978	0.8648
+ga ~ crl+ sqrt(anc_cur_wt)+ part_edu	3	0.865	0.0837522433521812	0.8648
+ga ~ derived_age_approx_age	1	0.004	0.227717496107054	0.0035
+ga ~ anc_cur_wt	1	0.003	0.227858074874534	0.0025
+ga ~ anc_cur_wt+ derived_age_approx_age	2	0.003	0.227871157062836	0.0021
+ga ~ sqrt(anc_cur_wt)+ derived_age_approx_age	2	0.003	0.227868360731169	0.0021
+ga ~ derived_age_approx_age+ part_edu	2	0.003	0.227915251841293	0.0021
+ga ~ derived_age_approx_age+ sqrt(part_edu)	2	0.003	0.227881366281647	0.0021
+ga ~ sqrt(anc_cur_wt)	1	0.002	0.2278702734899	0.0015
+ga ~ part_edu	1	0.002	0.22797007349172	0.0015
+ga ~ sqrt(part_edu)	1	0.002	0.227944860277006	0.0015
+ga ~ anc_cur_wt+ part_edu	2	0.002	0.228059998124227	0.0011
+ga ~ sqrt(anc_cur_wt)+ part_edu	2	0.002	0.228073765706566	0.0011
+ga ~ anc_cur_wt+ sqrt(part_edu)	2	0.002	0.22803629906159	0.0011
+ga ~ sqrt(anc_cur_wt)+ sqrt(part_edu)	2	0.002	0.228050017595853	0.0011
+ga ~ anc_cur_wt+ derived_age_approx_age+ part_edu	3	0.002	0.228071671443584	6e-4
+ga ~ sqrt(anc_cur_wt)+ derived_age_approx_age+ part_edu	3	0.002	0.228070197310177	6e-4
+ga ~ anc_cur_wt+ derived_age_approx_age+ sqrt(part_edu)	3	0.002	0.228040072303916	6e-4
+ga ~ sqrt(anc_cur_wt)+ derived_age_approx_age+ sqrt(part_edu)	3	0.002	0.228038227386203	6e-4
