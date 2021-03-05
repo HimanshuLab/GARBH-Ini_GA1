@@ -32,6 +32,9 @@ predict_ga <- function(crl,
   if("Garbhini1" %in% method){
     ga <- c(ga,Garbhini1 = 6.73526 + 1.15018*(crl) - 0.02294*(crl^2))
   }
+  if("GA_mixed-effects" %in% method){
+    ga <- c(ga,GA_mixed_effects = 6.2679 + (crl * 1.53902) - (0.07713 * (crl^2)))
+  }
   return(ga)
 }
 

@@ -32,15 +32,23 @@ methods =  c("Hadlock",
 #-----------------------------------------------------------------
 # Evaluation of formulae for gest age prediction ------------------------------------------------------------
 #-----------------------------------------------------------------
+methods =  c("Hadlock",
+             "McLennan-Schluter",
+             "Robinson-Fleming",
+             "Sahota",
+             "Verburg",
+             "Intergrowth",
+             "Garbhini1",
+             "GA_mixed-effects")
 
-predicted_test <- sapply(data_test$crl, predict_ga) %>% t %>% as.data.frame
-predicted_main <- sapply(data_main$crl, predict_ga) %>% t %>% as.data.frame
+predicted_test <- sapply(data_test$crl, predict_ga, method = methods) %>% t %>% as.data.frame
+predicted_main <- sapply(data_main$crl, predict_ga, method = methods) %>% t %>% as.data.frame
 
 performance_formulae <- data.frame(R2 = apply(predicted_test,2,R2,data_test$ga),
                                    RMSE = apply(predicted_test,2,RMSE,data_test$ga)) 
 
-predicted_test_dbscan <- sapply(data_test_dbscan$crl, predict_ga) %>% t %>% as.data.frame
-predicted_test_clinical <- sapply(data_test_clinical$crl, predict_ga) %>% t %>% as.data.frame
+predicted_test_dbscan <- sapply(data_test_dbscan$crl, predict_ga, method = methods) %>% t %>% as.data.frame
+predicted_test_clinical <- sapply(data_test_clinical$crl, predict_ga, method = methods) %>% t %>% as.data.frame
 
 data.frame(R2_test_dbscan = apply(predicted_test_dbscan,2,R2,data_test_dbscan$ga),
            R2_test_clinical = apply(predicted_test_clinical,2,R2,data_test_clinical$ga)) 
@@ -94,7 +102,15 @@ table4 <- matrix(nrow = ncol(predicted_main), ncol = ncol(predicted_main),
 table4[upper.tri(table4)] <- pairwise_BA_main[upper.tri(pairwise_BA_main)]
 table4[lower.tri(table4)] <- pairwise_BA_test[lower.tri(pairwise_BA_test)]
 table4 %>% as.data.frame() %>% 
-  write_tsv("outputs/Table2.tsv")
+  write_tsv("tables/Table2.tsv")
+
+methods =  c("Hadlock",
+             "McLennan-Schluter",
+             "Robinson-Fleming",
+             "Sahota",
+             "Verburg",
+             "Intergrowth",
+             "Garbhini1")
 
 #-----------------------------------------------------------------
 # Preterm Analysis ------------------------------------------------------------
